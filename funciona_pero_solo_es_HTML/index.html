@@ -7,12 +7,13 @@
   <body>
     <label>C A L C U L A D O R A </label>
     <form name= "calculadora">
-      <input type="textfield"  placeholder="0" name="respuesta"/>
+      <input type="textfield"  placeholder="0" name="respuesta" id="respuesta"/>
       <br>
       <input type="button" value="1" onclick= "document.calculadora.respuesta.value += '1'"/>
       <input type="button" value="2" onclick= "document.calculadora.respuesta.value += '2'"/>
       <input type="button" value="3" onclick= "document.calculadora.respuesta.value += '3'"/>
       <input type="button" value="+" onclick= "document.calculadora.respuesta.value += '+'"/>
+      <input type="button" value="C" onclick= "borrar()"/>
       <br>
       <input type="button" value="4" onclick= "document.calculadora.respuesta.value += '4'"/>
       <input type="button" value="5" onclick= "document.calculadora.respuesta.value += '5'"/>
@@ -26,8 +27,9 @@
       <br>
       <input type="button" value="." onclick= "document.calculadora.respuesta.value += '.'"/>
       <input type="button" value="0" onclick= "document.calculadora.respuesta.value += '0'"/>
-      <input type="button" value="=" onclick= "document.calculadora.respuesta.value = eval (document.calculadora.respuesta.value)">
+      <input type="button" value="=" onkeydown="Enter; eval (document.calculadora.respuesta.value) = '='" onclick= "document.calculadora.respuesta.value = eval (document.calculadora.respuesta.value)">
       <input type="button" value="/" onclick= "document.calculadora.respuesta.value += '/'"/>
     </form>
+    <script  type="text/javascript" src="js/javascript.js"></script>
   </body>
 </html>
