@@ -2,40 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <style>
+      input{
+        background: #80dfff;
+        border: 1px;
+        border-color: solid "white";
+        border-spacing: 1px;
+      }
+    </style>
     <title></title>
   </head>
   <body>
     <table>
-      <th>
+      <th colspan="4">
         C a l c u l a d o r a
       </th>
-      <tr><td>
-        <input type="text"  placeholder="0" id="resultado"/>
-      </tr></td>
-      <tr><td>
-        <input type="button" value=" 1 " onclick="inputRecibido(this.value)" id="uno"/>
-        <input type="button" value=" 2 " onclick="inputRecibido(this.value)" id="dos"/>
-        <input type="button" value=" 3 " onclick="inputRecibido(this.value)" id="tres"/>
-        <input type="button" value=" + " onclick="inputRecibido(this.value)" id="suma"/>
-      </tr></td>
-      <tr><td>
-        <input type="button" value=" 4 " onclick="inputRecibido(this.value)" id="cuatro"/>
-        <input type="button" value=" 5 " onclick="inputRecibido(this.value)" id="cinco"/>
-        <input type="button" value=" 6 " onclick="inputRecibido(this.value)" id="seis"/>
-        <input type="button" value=" - " onclick="inputRecibido(this.value)" id="menos"/>
-      </tr></td>
-      <tr><td>
-        <input type="button" value=" 7 " onclick="inputRecibido(this.value)" id="siete"/>
-        <input type="button" value=" 8 " onclick="inputRecibido(this.value)" id="ocho"/>
-        <input type="button" value=" 9 " onclick="inputRecibido(this.value)" id="nueve"/>
-        <input type="button" value=" * " onclick="inputRecibido(this.value)" id="multi"/>
-      </tr></td>
-      <tr><td>
-        <input type="button" value=" . " onclick="inputRecibidor(this.value)" id="decimal"/>
-        <input type="button" value=" 0 " onclick="inputRecibido(this.value)" id="cero"/>
-        <input type="button" value=" = " onclick="inputRecibido(this.value)" id="igual"/>
-        <input type="button" value=" / " onclick="inputRecibido(this.value)" id="division"/>
-      </tr></td>
+      <tr>
+        <td colspan="4"><input type="text"  placeholder="0" id="resultado"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value=" 1 " onclick="inputRecibido(this.value)" id="uno"/></td>
+        <td><input type="button" value=" 2 " onclick="inputRecibido(this.value)" id="dos"/></td>
+        <td><input type="button" value=" 3 " onclick="inputRecibido(this.value)" id="tres"/></td>
+        <td><input type="button" value=" + " onclick="inputRecibido(this.value)" id="suma"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value=" 4 " onclick="inputRecibido(this.value)" id="cuatro"/></td>
+        <td><input type="button" value=" 5 " onclick="inputRecibido(this.value)" id="cinco"/></td>
+        <td><input type="button" value=" 6 " onclick="inputRecibido(this.value)" id="seis"/></td>
+        <td><input type="button" value=" - " onclick="inputRecibido(this.value)" id="menos"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value=" 7 " onclick="inputRecibido(this.value)" id="siete"/></td>
+        <td><input type="button" value=" 8 " onclick="inputRecibido(this.value)" id="ocho"/></td>
+        <td><input type="button" value=" 9 " onclick="inputRecibido(this.value)" id="nueve"/></td>
+        <td><input type="button" value=" * " onclick="inputRecibido(this.value)" id="multi"/></td>
+      </tr>
+      <tr>
+        <td><input type="button" value=" . " onclick="inputRecibidor(this.value)" id="decimal"/></td>
+        <td><input type="button" value=" 0 " onclick="inputRecibido(this.value)" id="cero"/></td>
+        <td><input type="button" value=" = " onclick="inputRecibido(this.value)" id="igual"/></td>
+        <td><input type="button" value=" / " onclick="inputRecibido(this.value)" id="division"/></td>
+      </tr>
     </table>
     <script src="assets/js/funcion_operaciones.js"> </script>
   </body>

@@ -3,32 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <style>
+      input{
+        background: #80dfff;
+        color: #e6f8ff;
+        border: 1px;
+        border-spacing: 0px;
+      }
+      th{
+        font-family: Helvetica;
+        color: #ff4d94;
+      }
+    </style>
   </head>
   <body>
-    <label>C A L C U L A D O R A </label>
     <form name= "calculadora">
-      <input type="textfield"  placeholder="0" name="respuesta" id="respuesta"/>
-      <br>
-      <input type="button" value="1" onclick= "document.calculadora.respuesta.value += '1'"/>
-      <input type="button" value="2" onclick= "document.calculadora.respuesta.value += '2'"/>
-      <input type="button" value="3" onclick= "document.calculadora.respuesta.value += '3'"/>
-      <input type="button" value="+" onclick= "document.calculadora.respuesta.value += '+'"/>
-      <input type="button" value="C" onclick= "borrar()"/>
-      <br>
-      <input type="button" value="4" onclick= "document.calculadora.respuesta.value += '4'"/>
-      <input type="button" value="5" onclick= "document.calculadora.respuesta.value += '5'"/>
-      <input type="button" value="6" onclick= "document.calculadora.respuesta.value += '6'"/>
-      <input type="button" value="-" onclick= "document.calculadora.respuesta.value += '-'"/>
-      <br>
-      <input type="button" value="7" onclick= "document.calculadora.respuesta.value += '7'"/>
-      <input type="button" value="8" onclick= "document.calculadora.respuesta.value += '8'"/>
-      <input type="button" value="9" onclick= "document.calculadora.respuesta.value += '9'"/>
-      <input type="button" value="*" onclick= "document.calculadora.respuesta.value += '*'"/>
-      <br>
-      <input type="button" value="." onclick= "document.calculadora.respuesta.value += '.'"/>
-      <input type="button" value="0" onclick= "document.calculadora.respuesta.value += '0'"/>
-      <input type="button" value="=" onkeydown="Enter; eval (document.calculadora.respuesta.value) = '='" onclick= "document.calculadora.respuesta.value = eval (document.calculadora.respuesta.value)">
-      <input type="button" value="/" onclick= "document.calculadora.respuesta.value += '/'"/>
+      <table>
+        <th colspan="4">
+          C a l c u l a d o r a
+        </th>
+        <tr>
+          <td colspan="4"><input type="textfield"  name="respuesta" placeholder="0" id="respuesta"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value=" 1 " onclick= "document.calculadora.respuesta.value += '1'"/></td>
+          <td><input type="button" value=" 2 " onclick= "document.calculadora.respuesta.value += '2'"/></td>
+          <td><input type="button" value=" 3 " onclick= "document.calculadora.respuesta.value += '3'"/></td>
+          <td><input type="button" value=" + " onclick= "document.calculadora.respuesta.value += '+'"/></td>
+          <td><input type="button" value="C" onclick= "borrar()"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value=" 4 " onclick="document.calculadora.respuesta.value += '4'"/></td>
+          <td><input type="button" value=" 5 " onclick="document.calculadora.respuesta.value += '5'"/></td>
+          <td><input type="button" value=" 6 " onclick="document.calculadora.respuesta.value += '6'"/></td>
+          <td><input type="button" value=" - " onclick="document.calculadora.respuesta.value += '-'"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value=" 7 " onclick="document.calculadora.respuesta.value += '7'"/></td>
+          <td><input type="button" value=" 8 " onclick="document.calculadora.respuesta.value += '8'"/></td>
+          <td><input type="button" value=" 9 " onclick="document.calculadora.respuesta.value += '9'"/></td>
+          <td><input type="button" value=" * " onclick="document.calculadora.respuesta.value += '*'"/></td>
+        </tr>
+        <tr>
+          <td><input type="button" value=" . " onclick= "document.calculadora.respuesta.value += '.'"/></td>
+          <td><input type="button" value=" 0 " onclick= "document.calculadora.respuesta.value += '0'"/></td>
+          <td><input type="button" value=" = " onclick= "document.calculadora.respuesta.value = eval (document.calculadora.respuesta.value)" onkeydown="Enter; eval (document.calculadora.respuesta.value) = '='"/></td>
+          <td><input type="button" value=" / " onclick= "document.calculadora.respuesta.value += '/'"/></td>
+        </tr>
+      </table>
     </form>
     <script  type="text/javascript" src="js/javascript.js"></script>
   </body>
